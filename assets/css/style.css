@@ -1,0 +1,100 @@
+/* Body Design*/
+body {
+  color: #bcd9da;
+}
+
+/* Add stles to the header*/
+header {
+  background-image: url(../images/student.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: yellow;
+  margin: 0;
+  text-shadow: #130c3a;
+}
+
+header a {
+  text-decoration: none;
+  color: bisque;
+}
+
+header nav {
+  margin: 5px;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  text-shadow: 10px #41c21a;
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.5vw;
+}
+
+/* Header Hover */
+header nav ul li a:hover {
+  background: #145748;
+  color: #db7f16;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+/* Add styles to the footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #806f11;
+  width: 100%;
+  padding: 20px;
+  line-height: 1.5;
+  text-align: right;
+}
+
+/* Section Style */
+section {
+  padding: 20px;
+}
+
+/* About Me Style */
+#about-me {
+  align-items: flex-start;
+  background-image: url(../images/student.jpg);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.my-intro {
+  width: 65%;
+  line-height: 1.2;
+}
+
+.my-intro h2 {
+  text-shadow: 1 1 15px #db7f16;
+  font-size: 30px;
+  text-decoration: underline;
+}
