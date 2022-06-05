@@ -1,8 +1,7 @@
 /* Body Design*/
 body {
-  color: #bcd9da;
+  color: #231aa5;
 }
-
 /* Add stles to the header*/
 header {
   background-image: url(../images/student.jpg);
@@ -16,6 +15,7 @@ header {
 }
 
 header h1 {
+  text-align: center;
   font-weight: bold;
   font-size: 40px;
   color: yellow;
@@ -29,6 +29,7 @@ header a {
 }
 
 header nav {
+  top: 0;
   margin: 5px;
 }
 
@@ -89,12 +90,203 @@ section {
 }
 
 .my-intro {
-  width: 65%;
+  width: 75%;
   line-height: 1.2;
 }
 
 .my-intro h2 {
+  text-align: center;
   text-shadow: 1 1 15px #db7f16;
   font-size: 30px;
   text-decoration: underline;
+}
+
+/* Work Experience Style */
+#work-experience {
+  align-items: center;
+  background-color: antiquewhite;
+  color: #145748;
+  padding: 30px;
+}
+
+#work-experience h2 {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+  margin: 20px;
+}
+
+.experience-description {
+  line-height: 1.7;
+  color: #231aa5;
+  width: 80%;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+.experience-description h3 {
+  font-size: 22px;
+}
+
+.responsibilities {
+  border-bottom: 2px solid #39a6b2;
+  margin-bottom: 50px;
+}
+.responsibilities h4 {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.responsibilities ul li {
+  list-style: square;
+}
+
+.responsibilities ul:last-child {
+  padding-bottom: 20px;
+}
+
+/* Portfolio Style */
+
+.my-portfolio {
+  background-color: antiquewhite;
+}
+
+.my-portfolio h2 {
+  color: #130c3a;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.projects {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  border-bottom: 1px solid #39a6b2;
+  padding-bottom: 20px;
+  margin: 20px auto;
+}
+
+.project h3 {
+  color: #231aa5;
+  font-size: 22px;
+  text-decoration: underline;
+  padding-bottom: 20px;
+}
+
+.project-img {
+  margin-right: 20px;
+}
+
+.project-img img {
+  max-width: 100%;
+}
+
+/* Reach out section decoration*/
+
+.contact {
+  background: #024e76;
+}
+
+.contact h2 {
+  font-size: 30px;
+  color: yellow;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info div {
+  color: white;
+}
+
+.contact-info h3 {
+  color: yellow;
+  font-size: 22px;
+}
+
+.contact-info p,
+.contact-info address {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.contact-info a {
+  color: yellow;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: white;
+  border: 2px solid blue;
+  display: block;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    position: relative;
+    padding-bottom: 0;
+    justify-content: center;
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  header nav ul {
+    display: flex;
+    list-style-type: none;
+    width: 400px;
+
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  header nav ul li a {
+    font-size: 20px;
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  footer {
+    position: relative;
+    padding-bottom: 0;
+    justify-content: center;
+  }
+  footer h2,
+  footer div {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+  .my-intro {
+    text-align: center;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .my-intro p {
+    font-size: 18px;
+  }
 }
