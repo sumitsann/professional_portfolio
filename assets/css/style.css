@@ -1,10 +1,10 @@
 /* Body Design*/
 body {
-  color: #231aa5;
+  color: blue;
 }
 /* Add stles to the header*/
 header {
-  background-image: url(../images/student.jpg);
+  background-image: url(../images/background.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -25,7 +25,6 @@ header h1 {
 
 header a {
   text-decoration: none;
-  color: bisque;
 }
 
 header nav {
@@ -46,16 +45,15 @@ header nav ul li {
 }
 
 header nav ul li a {
-  text-shadow: 10px #41c21a;
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1.5vw;
+  font-size: 1.6vw;
 }
 
 /* Header Hover */
 header nav ul li a:hover {
-  background: #145748;
-  color: #db7f16;
+  background: palevioletred;
+  color: blue;
   border-radius: 15px;
   text-shadow: none;
 }
@@ -65,7 +63,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background: #806f11;
+  background: yellow;
   width: 100%;
   padding: 20px;
   line-height: 1.5;
@@ -80,7 +78,7 @@ section {
 /* About Me Style */
 #about-me {
   align-items: flex-start;
-  background-image: url(../images/student.jpg);
+  background-image: url(../images/background.jpg);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -105,20 +103,21 @@ section {
 #work-experience {
   align-items: center;
   background-color: antiquewhite;
-  color: #145748;
+
   padding: 30px;
 }
 
 #work-experience h2 {
   font-size: 30px;
   text-align: center;
+  color: green;
   text-decoration: underline;
   margin: 20px;
 }
 
 .experience-description {
   line-height: 1.7;
-  color: #231aa5;
+
   width: 80%;
   font-size: 18px;
   margin: 0 auto;
@@ -162,7 +161,6 @@ section {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -173,7 +171,6 @@ section {
 }
 
 .project h3 {
-  color: #231aa5;
   font-size: 22px;
   text-decoration: underline;
   padding-bottom: 20px;
@@ -185,17 +182,28 @@ section {
 
 .project-img img {
   max-width: 100%;
+  width: 400px;
+  height: 300px;
+  margin: 30px;
+  padding: 0;
+}
+
+.project-img img:hover {
+  transform: scale(1.2);
 }
 
 /* Reach out section decoration*/
 
 .contact {
   background: #024e76;
+  border-radius: 20px;
 }
 
 .contact h2 {
   font-size: 30px;
-  color: yellow;
+  color: whitesmoke;
+  text-decoration: underline;
+  padding-bottom: 20px;
 }
 
 .contact-info {
@@ -237,6 +245,13 @@ section {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+  body {
+    font-size: 20px;
+  }
+  .contact-info {
+    display: block;
+  }
+
   header {
     position: relative;
     padding-bottom: 0;
@@ -247,17 +262,18 @@ section {
     text-align: center;
   }
   header nav ul {
-    display: flex;
-    list-style-type: none;
-    width: 400px;
-
-    margin-top: 20px;
+    display: block;
+    list-style-type: circle;
+    margin-top: 30px;
     width: 100%;
-    justify-content: center;
+  }
+  header nav ul li {
+    padding: 20px;
+    display: block;
+    justify-content: left;
   }
   header nav ul li a {
     font-size: 20px;
-    display: block;
     padding: 8px 16px;
     text-decoration: none;
   }
@@ -271,6 +287,9 @@ section {
     text-align: center;
     width: 100%;
     font-size: 20px;
+  }
+  .projects {
+    display: block;
   }
 }
 
