@@ -1,6 +1,7 @@
 /* Body Design*/
 body {
   color: blue;
+  font-size: 18px;
 }
 /* Add stles to the header*/
 header {
@@ -51,7 +52,7 @@ header nav ul li a {
 }
 
 /* Header Hover */
-header nav ul li a:hover {
+a:hover {
   background: palevioletred;
   color: blue;
   border-radius: 15px;
@@ -85,6 +86,11 @@ section {
   background-size: cover;
   background-position: center;
   position: relative;
+}
+
+#about-me img {
+  width: 100%;
+  height: auto;
 }
 
 .my-intro {
