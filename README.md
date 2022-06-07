@@ -5,7 +5,7 @@ A website that shows the professional portfolio which is responsive in anny scre
 ## Built With
 * HTML
 * CSS
-* 
+
 ## Prerequisites
 none
 
