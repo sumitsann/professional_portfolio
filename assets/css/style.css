@@ -207,7 +207,16 @@ section {
 }
 
 .project-img img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+/* First Project Decoration*/
+.first-project .project a h3 {
+  font-size: 40px;
+}
+.first-project .project a img {
+  width: 500px;
+  height: 400px;
 }
 
 /* Reach out section decoration*/
